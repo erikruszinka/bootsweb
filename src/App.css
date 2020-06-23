@@ -1,22 +1,236 @@
-.App {
-  text-align: center;
+button:focus {
+  outline:0 !important;
 }
 
-.App-logo {
-  height: 40vmin;
+.fullscreen {
+  background-color: #F4F4F5;
+  -webkit-box-shadow:inset 0px 0px 0px 30px #4ED1C5;
+  -moz-box-shadow:inset 0px 0px 0px 30px #4ED1C5;
+  box-shadow:inset 0px 0px 0px 30px #4ED1C5;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.orange{
+  background-color: #F4F4F5;
+  -webkit-box-shadow:inset 0px 0px 0px 30px #FEC375;
+  -moz-box-shadow:inset 0px 0px 0px 30px #FEC375;
+  box-shadow: inset 0px 0px 0px 30px #FEC375;
+}
+
+.circle{
+  width: 550px;
+  height: 550px;
+  border-radius: 100%;
+  background-color: #4ED1C5;
+  position: absolute;
+}
+
+.circle1{
+  width: 550px;
+  height: 550px;
+  border-radius: 100%;
+  background-color: #FEC375;
+  position: absolute;
+}
+
+.right{
+  background-size: 15px 15px;
+  background-image: url("./icons/right-arrow.svg");
+  background-repeat: no-repeat;
+  background-color: white;
+  background-position: center;
+}
+
+.right:hover{
+  background-size: 15px 15px;
+  background-image: url("./icons/right-arrow1.svg");
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.box{
+  background-color: black;
+}
+
+.left{
+  background-size: 15px 15px;
+  background-image: url("./icons/left-arrow.svg");
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center;
+}
+
+.left:hover{
+  background-size: 15px 15px;
+  background-image: url("./icons/left-arrow1.svg");
+  background-repeat: no-repeat;
+  background-color: silver;
+  background-position: center;
+  transition-duration: 1s;
+
+}
+.piece{
+  width: 33.3%;
+  display: inline-block;
+}
+
+.circle-container{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items-container{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  position: relative;
 }
 
-.App-link {
-  color: #09d3ac;
+.basket-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.yeezy{
+  padding-left: 60px;
+}
+
+.burger{
+  margin-right: 20px;
+}
+
+.search{
+  margin-right: 20px;
+}
+
+.kali{
+  padding-top: 60px;
+  padding-left: 60px;
+}
+
+.backButton{
+  padding-left: 60px;
+  padding-bottom: 60px;
+}
+
+.basket{
+  padding-bottom: 30px;
+  padding-right: 30px;
+}
+
+h1 {
+  animation: move 0.5s;
+  -webkit-animation: move 0.5s;
+}
+
+.secondline {
+  animation: move 1s;
+  -webkit-animation: move 1s;
+}
+
+.divhover{
+  height: 80px;
+  margin-right: 20px;
+  margin-top: -10px;
+}
+
+.divhover:hover{
+  margin-bottom: 15px;
+  box-shadow: 0px 15px 10px -15px #111;
+  transform: translateY(-12px);
+  transition: 0.5s;
+}
+
+.basketboot{
+  margin-top: -10px;
+}
+
+.basketboot1{
+  padding-top: 10px;
+}
+
+.rightboot{
+  animation: rightbootyeezy 1s, spin 40s linear infinite;
+  -webkit-animation: rightbootyeezy 1s, spin 40s linear infinite;
+  position: absolute;
+  margin-top: -100px;
+  margin-left: -92px;
+}
+
+.leftboot{
+  animation: leftbootyeezy 1s, spin 10s linear infinite ;
+  -webkit-animation: leftbootyeezy 1s, spin 10s linear infinite;
+  margin-left: -412px;
+  margin-top: -270px;
+  position: absolute;
+}
+
+.rightboot1{
+  animation: rightbootchanel 1s, spin 40s linear infinite;
+  -webkit-animation: rightbootchanel 1s, spin 40s linear infinite;
+  position: absolute;
+  margin-left: -140px;
+  margin-top: -159px;
+}
+
+.leftboot1{
+  animation: leftbootchanel 1s, spin 20s linear infinite;
+  -webkit-animation: leftbootchanel 1s, spin 20s linear infinite;
+  margin-left: -450px;
+  margin-top: -332px;
+  position: absolute;
+}
+
+/*@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }*/
+/*@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }*/
+/*    @keyframes spin*/
+/*    {*/
+/*      50%*/
+/*    {*/
+/*        -webkit-transform: rotate(30deg);*/
+/*        transform:rotate(30deg);*/
+/*    }*/
+/*      50%*/
+/*      {*/
+/*        -webkit-transform: rotate(30deg);*/
+/*        transform:rotate(30deg);*/
+/*      }*/
+/*    }*/
+
+@keyframes rightbootyeezy {
+  0% {
+    transform: translateX(80%);
+  }
+ }
+
+@keyframes leftbootyeezy {
+  0% {
+    transform: translateX(-80%);
+  }
+}
+
+@keyframes rightbootchanel {
+  0% {
+    transform: translateX(80%);
+  }
+}
+
+@keyframes leftbootchanel {
+  0% {
+    transform: translateX(-80%);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-50%);
+  }
+
 }
