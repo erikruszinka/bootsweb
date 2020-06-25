@@ -27,8 +27,8 @@ const Chanel=()=>{
                     <button className="border-b-2 border-black text-xs font-medium">Buy Now</button>
                 </div>
                 <div className="flex pl-20 pb-20" >
-                    <Link to="/1"><button className='w-20 h-10 pl-8 left'></button></Link>
-                    <Link to="/2"><button className="w-20 h-10 pl-8 right"></button></Link>
+                    <Link to="/"><button className='w-20 h-10 pl-8 left'></button></Link>
+                    <Link to="/1"><button className="w-20 h-10 pl-8 right"></button></Link>
                     <div className="pl-8 text-xs font-medium flex items-center">02 - 02</div>
                 </div>
             </div>

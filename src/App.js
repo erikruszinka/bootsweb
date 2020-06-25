@@ -8,8 +8,8 @@ import './css/hover.css'
 function App() {
         return (
             <Router>
-                <Yeezy path="/1" />
-                <Chanel path="/2" />
+                <Yeezy path="/" />
+                <Chanel path="/1" />
             </Router>
         );
 }
